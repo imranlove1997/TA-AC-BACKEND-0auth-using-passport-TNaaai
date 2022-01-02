@@ -1,0 +1,22 @@
+<%- include('content/header') -%>
+<div class="container">
+    <div class="user-dash flex space-between align-items">
+        <h2 class="username"><%= user.username %></h2>
+        <a href="/articles/new"><button class="btn-new">Add New Article</button></a>
+    </div>
+    <div class="article-post center"><%= user.username %> Articles</div>
+    <% if(articles.length === 0 ) { %>
+        <p class="no-posts">There are no posts</p>
+   <% } %>
+    <% articles.forEach(article => { %>
+    <div class="user-dash flex space-between align-items">
+        <a href="/articles/<%= article.slug %>"><h2 class="username"><%= article.title %></h2></a>
+        <p class="total-likes">Total Likes(<%= article.likes %>)</p>
+        <div class="buttons">
+        <a href="/articles/<%= article.slug %>/edit"><button class="btn-new">Edit</button></a>
+        <a href="/articles/<%= article.slug %>/delete"><button class="btn-new">Delete</button></a> 
+    </div>
+    </div>
+    <% }) %>
+</div>
+<%- include('content/footer') -%>
