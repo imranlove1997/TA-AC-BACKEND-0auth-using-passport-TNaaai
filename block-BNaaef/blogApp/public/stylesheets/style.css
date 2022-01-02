@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.541), rgba(0, 128, 0, 0.507));
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.padding {
+  padding: 0.3rem 0.5rem;
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-items {
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.center {
+  text-align: center;
+}
+nav {
+  background-color: aquamarine;
+}
+nav ul li {
+  padding: 0.3rem 0.3rem;
+}
+nav ul li a {
+  padding: 0.3rem 0.6rem;
+  font-size: 1.2rem;
+  color: black;
+}
+nav ul li a:hover {
+  background-color: cadetblue;
+}
+.btn-index {
+  margin: 1rem 0;
+  padding: 0.2rem 0.4rem;
+  font-size: 1rem;
+  background-color: greenyellow;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.4rem #999;
+}
+.btn-index:hover {
+  background-color: #3e8341;
+}
+.btn-index:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.article-content {
+  margin: 0.3rem 0.6rem;
+  box-shadow: 0 10px 12px #fff;;
+}
+.article-title {
+  background: linear-gradient(90deg, black, white);
+  font-size: 1.8rem;
+  color: white;
+  padding: 0.3rem 0.5rem;
+}
+.article-description {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.read-more {
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  background: #3e8e41;
+  border-radius: 0.8rem;
+}
+.article-title, .article-description, .read-more {
+  margin-top: 0.3rem;
+}
+.form {
+  border: 1px solid black;
+  width: 50%;
+  margin: 0.5rem auto;
+}
+.form-title {
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+.form-control input, textarea {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  margin: 0.2rem 0;
+}
+.form-control input::placeholder {
+  color: #333;
+}
+.form-control input[type=submit] {
+  width: 50%;
+  font-size: 1.2rem;
+  padding: 0.3rem 0;
+  background: lightblue;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  color: green;
+  
+}
+.user-dash {
+  margin-top: 0.3rem;
+  background-color: grey;
+}
+.username {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.btn-new {
+  padding: 0.3rem 0.5rem;
+  background-color: grey;
+  color: white;
+  border: 0.7rem;
+  border: 1px solid black;
+  font-size: 1rem;
+}
+.btn-new:hover {
+  text-decoration: underline;
+}
+.article-post {
+  border: 2px dotted red;
+  font-size: 2rem;
+  width: 50%;
+  margin: 1.5rem auto;
+  text-transform: capitalize;
+}
+.username {
+  color: black;
+}
+.user-article {
+  margin-top: 0.5rem;
+  background-color: thistle;
+}
+.user-title {
+  font-size: 1.5rem;
+}
+.buttons button {
+  padding: 0.3rem 0.5rem;
+  font-size: 1.2rem;
+}
+.no-posts {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+span.like, span.dislike {
+  color: black;
+  float: right;
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+}
+.like a, .dislike a {
+  color: black;
+}
+.comment {
+  width: 50%;
+  margin: 2rem auto;
+  box-shadow: 0 5px 10px #322;
+}
+.comment-name {
+  font-size: 2rem;
+}
+.comment-author {
+  font-size: 1.2rem;
+}
+.comment-author::before {
+  content: 'Comment By:-';
+}
+.register-btn {
+  width: 20%;
+  margin: 1.2rem auto;
+}
+.register-btn button {
+  font-size: 1.3rem;
+  margin: 0.3rem 0;
+  background-color: transparent;
+}
+.register-btn button:hover {
+  border: 1px solid black;
+}

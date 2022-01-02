@@ -1,0 +1,12 @@
+<%- include('content/header') -%>
+<div class="container center">
+  <div class="form form-control">
+      <h3 class="form-title">Update  Article</h3>
+      <form action="/articles/<%= article.slug %>" method="POST">
+          <input type="text" name="title" id="title" value="<%= article.title %>">
+          <textarea name="description" id="description" cols="30" rows="10" placeholder="Enter Description"><%= article.description %></textarea>
+          <input type="submit" value="Update Article">
+      </form>
+  </div>
+</div>
+<%- include('content/footer') -%>

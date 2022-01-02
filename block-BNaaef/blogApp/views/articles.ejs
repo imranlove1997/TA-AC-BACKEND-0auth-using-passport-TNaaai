@@ -1,0 +1,11 @@
+<%- include('content/header') -%>
+<div class="container padding flex align-items wrap">
+    <% articles.forEach(article => { %>
+        <div class="article-content">
+            <h2 class="article-title"><%= article.title %> <span class="like">Total Likes (<%= article.likes %>)</span></h2>
+            <p class="article-description"><%= article.description.substr(0, 500) %></p>
+            <a href="/articles/<%= article.slug %>"><button class="read-more">Read More</button></a>
+        </div>
+   <% }) %>
+</div>
+<%- include('content/footer') -%>
